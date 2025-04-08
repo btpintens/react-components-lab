@@ -3,10 +3,10 @@ import "./WeatherForecast.css";
 const WeatherForecastItem = ({ weather }) => {
     return (
         <div className="weather">
-        <h2>Day of the Week</h2>
-            <img src="" alt="" />
-            <p><span>conditions: </span>current weather conditions</p>
-            <p><span>time: </span>time of day</p>
+        <h2>Day of the Week {weather.day}</h2>
+            <img src={weather.img} alt={weather.imgAlt}/>
+            <p><span>conditions: {weather.conditions}</span></p>
+            <p><span>time: {weather.time}</span></p>
         </div>
     )   
 }
